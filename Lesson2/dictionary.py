@@ -66,13 +66,72 @@ print(merge1(A, B))
 
 # Bài 5: Tìm Key Có Giá Trị Lớn Nhất
 # Yêu cầu: Cho một dictionary có các cặp {key: value}. Viết chương trình để tìm key có giá trị lớn nhất.
-    
+    # cách 1:
+def find_max_key(dict):
+    # Khai báo value lớn nhất là value đầu tiên trong dict
+    max_value = list(dict.values())[0]
+    # Khai báo key lớn nhất mặc định là key đầu tiên
+    max_key = list(dict.keys())[0]
+    # Duyệt dict
+    for key, value in dict.items():
+        # Nếu value lớn hơn max_value thì cập nhật max_value và max_key
+        if value > max_value:
+            max_value = value
+            max_key = key
+    return max_key
+print(find_max_key(A))
+print(find_max_key(B))
+
+    # Cách 2
+def find_max_key_2(dict1):
+    # sử dụng max() với key để tìm key có giá trị lớn nhất
+    return max(dict1, key = dict1.get)
+print(find_max_key_2(A))
+print(find_max_key_2(B))
 
 # Bài 6: Sắp Xếp Dictionary Theo Giá Trị
 # Yêu cầu: Viết chương trình để sắp xếp một dictionary theo giá trị từ cao đến thấp.
+grade = {
+    'Đức Minh': 1,
+    'Quang Huy': 7,
+    'Hoàng Bách': 9,
+    'Minh Nhật': 7.5,
+    'Xuân Tú': 8
+}
+def sort_dict(dictionary):
+    # sử dụng sorted() với key để sắp xếp dictionary
+    return dict(sorted(dictionary.items(), key=lambda item: item[1], reverse=True))
+print(sort_dict(grade))
 
 # Bài 7: Nhóm Các Phần Tử Theo Giá Trị
 # Yêu cầu: Viết chương trình để nhóm các phần tử của một dictionary dựa trên giá trị của chúng. Ví dụ, các phần tử có cùng giá trị sẽ được đưa vào một danh sách.
+data = {
+    'apple': 1,
+    'banana': 2,
+    'cherry': 2,
+    'bomb': 3,
+    'elderberry': 3
+}
 
+def group_by_value(dict):
+    # Khai báo dict để lưu các phần tử có cùng số lượng
+    group_dict = {}
+    # Duyệt dict
+    for key, value in dict.items():
+        # Nếu value chưa có trong group_dict thì thêm vào
+        if value not in group_dict:
+            group_dict[value] = []
+        # Nếu value đã có trong group_dict thì thêm key vào danh sách
+        group_dict[value].append(key)
+    return group_dict
+print(group_by_value(data))
+        
 # Bài 8: Tạo Dictionary Từ Danh Sách
 # Yêu cầu: Viết chương trình tạo một dictionary từ hai danh sách: một danh sách chứa key và một danh sách chứa value tương ứng.
+keys = ['apple', 'banana', 'cherry']
+values = [1, 2, 3]
+def list_to_dict(keys, values):
+    # zip(): tạo ra các cặp key-value từ 2 danh sách
+    # dict(): chuyển các cặp key-value thành dictionary
+    return dict(zip(keys, values))
+print(list_to_dict(keys, values))
