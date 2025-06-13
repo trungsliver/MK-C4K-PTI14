@@ -26,6 +26,7 @@ print('Girlfriend:', dict2.get('gf', '404 not found'))
 dict2['laptop'] = 'MSI'
     # Chỉnh sửa value
 dict2['name'] = 'Huy Quần Hoa'
+print(dict2)
 
 # Delete - Xóa 
     # Xóa theo key - del
