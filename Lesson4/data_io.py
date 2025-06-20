@@ -15,5 +15,5 @@ def load_json_data():
 
 # Ghi dữ liệu
 def write_json_data(json_data):
-    with open('data.json', 'w') as file:
+    with open('data.json', 'w', encoding='utf8') as file:
         json.dump(json_data, file)
