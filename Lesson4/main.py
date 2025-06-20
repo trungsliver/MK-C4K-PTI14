@@ -42,14 +42,14 @@ dtb.add_player(new_player)
 # Sửa thông tin
 edit_player = {
         "id": 10,
-        "name": "Khai Hung",
+        "name": "Duc Minh hihi",
         "dob": "16/10/2011",
         "region": "Vietnam",
         "club": "Roblox",
         "rating": 1.0,
         "worth": 2
 }
-dtb.edit_player('Khai Hung', edit_player)
+dtb.edit_player('Duc Minh', edit_player)
 
 # Xóa thông tin
-dtb.delete_player('Khai Hung')
+dtb.delete_player('Duc Minh')
