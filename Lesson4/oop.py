@@ -29,6 +29,17 @@ Rating: {self.rating}
 Worth: {self.worth}
 ====================""")
         
+# p1 = Player(1, 'Trung', '07/08/1998', 'Vietnam', 'MindX', 5, 9999)
+# p2 = Player(2, 'Long', '07/08/1998', 'Vietnam', 'MindX')
+# p3 = Player(id = 3, 
+#             name = 'Thúy',
+#             dob = '07/08/1998', 
+#             region = 'Vietnam',
+#             club = 'MindX')
+# p1.show_info()
+# p2.show_info()
+# p3.show_info()
+
 class PlayerDatabase:
     def __init__(self):
         # Tạo danh sách chứa các player - dạng object
@@ -88,7 +99,7 @@ class PlayerDatabase:
         # Thêm vào danh sách object
         self.players_list.append(new_player)
         # Chỉnh sửa danh sách dict
-        self.players_dict.append(player_dict)
+        self.players_dict.append(new_player.__dict__)
         # Ghi vào file json khi thêm đối tượng mới
         data_io.write_json_data(self.players_dict)
 

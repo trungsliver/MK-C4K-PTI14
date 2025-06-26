@@ -3,6 +3,10 @@ import oop
 # Khởi tạo dữ liệu (database)
 dtb = oop.PlayerDatabase()
 
+# Kiểm tra dữ liệu
+print("players_dict:", len(dtb.players_dict))
+print("players_list:", len(dtb.players_list))
+
 # Load data vào danh sách object
 dtb.convert_to_object()
 
@@ -29,7 +33,7 @@ else:
 
 # Thêm 1 data mới
 new_player = {
-        "id": 16,
+        "id": 9999999,
         "name": "Duc Minh",
         "dob": "14/09/2012",
         "region": "Vietnam",
@@ -37,7 +41,7 @@ new_player = {
         "rating": 1.0,
         "worth": 1
 }
-dtb.add_player(new_player)
+# dtb.add_player(new_player)
 
 # Sửa thông tin
 edit_player = {
@@ -49,7 +53,7 @@ edit_player = {
         "rating": 1.0,
         "worth": 2
 }
-dtb.edit_player('Duc Minh', edit_player)
+dtb.edit_player('Cristiano Ronaldo', edit_player)
 
 # Xóa thông tin
-dtb.delete_player('Duc Minh')
+dtb.delete_player('Duc Minh hihi')

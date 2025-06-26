@@ -1,14 +1,5 @@
 [
     {
-        "id": 1,
-        "name": "Cristiano Ronaldo",
-        "dob": "05/02/1985",
-        "region": "Portugal",
-        "club": "Al-Nassr",
-        "rating": 9.7,
-        "worth": 40000000.0
-    },
-    {
         "id": 2,
         "name": "Lionel Messi",
         "dob": "24/06/1987",
@@ -141,6 +132,42 @@
         "region": "Vietnam",
         "club": "Roblox",
         "rating": 1.0,
-        "worth": 1
+        "worth": 1.0
+    },
+    {
+        "id": 17,
+        "name": "Duc Minh",
+        "dob": "14/09/2012",
+        "region": "Vietnam",
+        "club": "Roblox",
+        "rating": 1.0,
+        "worth": 1.0
+    },
+    {
+        "id": 18,
+        "name": "Duc Minh",
+        "dob": "14/09/2012",
+        "region": "Vietnam",
+        "club": "Roblox",
+        "rating": 1.0,
+        "worth": 1.0
+    },
+    {
+        "id": 19,
+        "name": "Duc Minh",
+        "dob": "14/09/2012",
+        "region": "Vietnam",
+        "club": "Roblox",
+        "rating": 1.0,
+        "worth": 1.0
+    },
+    {
+        "id": 20,
+        "name": "Duc Minh",
+        "dob": "14/09/2012",
+        "region": "Vietnam",
+        "club": "Roblox",
+        "rating": 1.0,
+        "worth": 1.0
     }
 ]
