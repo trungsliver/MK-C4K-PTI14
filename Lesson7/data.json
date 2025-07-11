@@ -2,5 +2,25 @@
     {
         "email": "admin",
         "password": "admin"
+    },
+    {
+        "email": "baolam",
+        "password": "123"
+    },
+    {
+        "email": "khaihoang",
+        "password": "456"
+    },
+    {
+        "email": "giaba0",
+        "password": "789"
+    },
+    {
+        "email": "minhnhat",
+        "password": "dangchoigame"
+    },
+    {
+        "email": "quanghuy",
+        "password": "matketnoi"
     }
 ]
