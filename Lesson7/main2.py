@@ -8,7 +8,7 @@ import oop
 app = QApplication(sys.argv)
 # Khởi tạo database
 dtb = oop.UserDatabase()
-dtb.load_data()
+dtb.convert_to_object()
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
         # Lấy acc từ file json
         accouts = dtb.get_acc()
         # Lấy username từ file json
-        users = dtb.get_username()
+        users = dtb.get_email()
         # Thêm danh sách để hiển thị trên list widget
         self.listWidget.addItems(accouts)
         
