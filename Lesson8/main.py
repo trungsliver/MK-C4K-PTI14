@@ -21,9 +21,9 @@ class MainWindow(QMainWindow):
         self.listWidget.addItems(accounts)
         # Khai báo sự kiện ấn các nút
         self.btn_add.clicked.connect(self.add_item)
-        # self.btn_edit.clicked.connect(self.edit_item)
-        # self.btn_delete.clicked.connect(self.delete_item)
-        # self.btn_search.clicked.connect(self.search_item)
+        self.btn_edit.clicked.connect(self.edit_item)
+        self.btn_delete.clicked.connect(self.delete_item)
+        self.btn_search.clicked.connect(self.search_item)
 
     def add_item(self):
         # Lấy text ở lineEdit
@@ -41,6 +41,70 @@ class MainWindow(QMainWindow):
         # Xóa dữ liệu ở lineEdit
         self.lineEdit_username.setText('')
         self.lineEdit_password.setText('')
+
+    def edit_item(self):
+        # Lấy index dòng đang chọn trên list widget
+        cur = self.listWidget.currentRow()
+        # Lấy text ở lineEdit
+        username = self.lineEdit_username.text().strip()
+        password = self.lineEdit_password.text().strip()
+        # Thêm phần tử vào danh sách / file data
+        if username != '' and password != '':
+            if cur >= 0:
+                dtb.users_list[cur] = oop.User(username, password)
+                dtb.convert_to_dict()
+            else:
+                msg_box('Lỗi', 'Chưa chọn đối tượng để sửa!')
+        else:
+            msg_box('Thất bại', 'Nhập thiếu thông tin')
+        # Xóa hết các phần tử trên widget
+        self.listWidget.clear()
+        # Thêm lại danh sách
+        self.listWidget.addItems(dtb.get_acc())
+        # Xóa dữ liệu ở lineEdit
+        self.lineEdit_username.setText('')
+        self.lineEdit_password.setText('')
+
+    def delete_item(self):
+        # Lấy index dòng đang chọn trên list widget
+        cur = self.listWidget.currentRow()
+        if cur >= 0:
+            dtb.users_list.pop(cur)
+            dtb.convert_to_dict()
+        else:
+            msg_box('Lỗi', 'Chưa chọn đối tượng để xóa!')
+        # Xóa hết các phần tử trên widget
+        self.listWidget.clear()
+        # Thêm lại danh sách
+        self.listWidget.addItems(dtb.get_acc())
+        # Xóa dữ liệu ở lineEdit
+        self.lineEdit_username.setText('')
+        self.lineEdit_password.setText('')
+
+    def search_item(self):
+        cur = self.listWidget.currentRow()
+        # Lấy text ở lineEdit
+        username = self.lineEdit_username.text().strip()
+        # Khai báo danh sách tìm kiếm
+        search_list = []
+        check = False
+        # Thêm phần tử vào danh sách / file data
+        if username != '':
+            for user in dtb.users_list:
+                if user.email == username:
+                    search_list.append(f'{user.email} - {user.password}')
+                    check =  True
+        else:
+            msg_box('Thất bại', 'Nhập thiếu thông tin')
+        # Xóa hết các phần tử ở trên widget
+        self.listWidget.clear()
+        # add lại cả danh sách vào list widget
+        if check == True:
+            msg_box('Thành công', f'Có {len(search_list)} kết quả!')
+        else:
+            search_list.append('Không có kết quả')
+        self.listWidget.addItems(search_list)
+        
 
 def msg_box(title, content):
     msg = QtWidgets.QMessageBox()
