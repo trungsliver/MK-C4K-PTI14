@@ -1,9 +1,26 @@
 Thứ tự thuyết trình
 
-1. Gia Bảo
-2. Xuân Tú
-3. Quang Huy
-4. Bảo Lâm
-5. Đức Minh
-6. Minh Nhật
-7. Khải Hoàng
+1. Gia Bảo:
+2. Xuân Tú: Quản lý chi tiêu cá nhân
+    - Đăng - ký - đăng nhập - đăng xuất (json)
+    - Thêm - sửa - xóa - Tìm kiếm các khoản thu chi
+    - Thống kê theo tháng / tìm kiếm
+
+3. Quang Huy: Notes App
+    - Chức năng: 
+        + Đăng ký - Đăng nhập - Đăng xuất (file json)
+        + Lưu notes theo từng người dùng: Thêm sửa xóa tìm kiếm (lưu thay đổi vào json)
+
+4. Bảo Lâm: Calculator + lịch sử tính toán
+
+5. Đức Minh:  Quản lý danh bạ
+    - Đăng - ký - đăng nhập - đăng xuất (json)
+    - Thêm - sửa - xóa - Tìm kiếm
+    - Lọc theo tag
+
+6. Minh Nhật: Nâng cấp app Roblox
+    - Đăng - ký - đăng nhập - đăng xuất (json)
+    - Mua / Bán items games
+
+
+7. Khải Hoàng:
