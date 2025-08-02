@@ -23,4 +23,7 @@ Thứ tự thuyết trình
     - Mua / Bán items games
 
 
-7. Khải Hoàng:
+7. Khải Hoàng: Quản lý sách
+    - Đăng - ký - đăng nhập - đăng xuất (json)
+    - Thêm - sửa - xóa - Tìm kiếm
+    - Lọc theo chủ đề
