@@ -1,6 +1,6 @@
 Thứ tự thuyết trình
 
-1. Gia Bảo:
+1. Gia Bảo: Kiểm tra tốc độ đánh máy
 2. Xuân Tú: Quản lý chi tiêu cá nhân
     - Đăng - ký - đăng nhập - đăng xuất (json)
     - Thêm - sửa - xóa - Tìm kiếm các khoản thu chi
