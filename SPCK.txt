@@ -1,29 +1,19 @@
 Thứ tự thuyết trình
 
 1. Gia Bảo: Kiểm tra tốc độ đánh máy
+https://www.canva.com/design/DAGwJEgB2-Y/Sz4Iw7qKCA5bVaAhZBWcCA/edit
+
 2. Xuân Tú: Quản lý chi tiêu cá nhân
-    - Đăng - ký - đăng nhập - đăng xuất (json)
-    - Thêm - sửa - xóa - Tìm kiếm các khoản thu chi
-    - Thống kê theo tháng / tìm kiếm
+https://www.canva.com/design/DAGwJGW9F8c/fO4HvqpXEBVyO87-_K6wTQ/edit
 
 3. Quang Huy: Notes App
-    - Chức năng: 
-        + Đăng ký - Đăng nhập - Đăng xuất (file json)
-        + Lưu notes theo từng người dùng: Thêm sửa xóa tìm kiếm (lưu thay đổi vào json)
+https://www.canva.com/design/DAGwJJRxjYg/LKT1pTuyqorrm447V1L7Zg/edit
 
 4. Bảo Lâm: Calculator + lịch sử tính toán
+https://www.canva.com/design/DAGwJNjL2es/myxXEh7bEklbuwyd00W7dA/edit
 
-5. Đức Minh:  Quản lý danh bạ
-    - Đăng - ký - đăng nhập - đăng xuất (json)
-    - Thêm - sửa - xóa - Tìm kiếm
-    - Lọc theo tag
+5. Minh Nhật: Nâng cấp app Roblox
+https://www.canva.com/design/DAGwJCv9bPQ/pugZQ4ePHFciT0u2a77-NA/edit
 
-6. Minh Nhật: Nâng cấp app Roblox
-    - Đăng - ký - đăng nhập - đăng xuất (json)
-    - Mua / Bán items games
-
-
-7. Khải Hoàng: Quản lý sách
-    - Đăng - ký - đăng nhập - đăng xuất (json)
-    - Thêm - sửa - xóa - Tìm kiếm
-    - Lọc theo chủ đề
+6. Khải Hoàng: Quản lý sách
+https://www.canva.com/design/DAGwJElUsgg/1fC32aP1BVMbAOsmvF6tgg/edit
